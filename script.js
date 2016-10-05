@@ -1,6 +1,6 @@
 function getZonkyToken() {
   
-  var payload = 'username=XXX&password=XXX&grant_type=password&scope=SCOPE_APP_WEB'; 
+  var payload = 'username=XXX&password=XXX&grant_type=password&scope=SCOPE_APP_WEB';  // replace XXX
 var headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
     'Authorization': 'Basic d2ViOndlYg=='
@@ -61,8 +61,8 @@ function postRecordWallet(body){
   
   var headers = {
   'Content-Type': 'application/json',
-  'X-Token' : 'XXX',
-  'X-User': 'XXX'
+  'X-Token' : 'XXX',  // replace XXX
+  'X-User': 'XXX' // replace XXX
 };
 var url = 'https://api.budgetbakers.com/api/v1/records-bulk';
 var options = {
@@ -100,9 +100,9 @@ function createRecordWallet() {
   
   var body = 
   [{
-    'categoryId': 'XXX', 
-    'accountId': 'XXX', 
-    'currencyId': 'XXX', 
+    'categoryId': 'XXX',  // replace XXX
+    'accountId': 'XXX',  // replace XXX
+    'currencyId': 'XXX', // replace XXX
     'amount': amount,
     'paymentType': 'web_payment',
     'date': json[x].transactionDate,
